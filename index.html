@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PrintR Bootstrap SiteBuild</title>
+    <link 
+      rel="stylesheet" 
+      href="./assets/fontawesome-free-6.2.1-web/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body id="#home">
+    
+    <!-- Nav section -->
+    <nav class="navbar navbar-expand-md navbar-light fixed top py-4">
+      <div class="container">
+
+        <a href="" class="d-flex align-items-center text-secondary text-decoration-none">
+          <h3>Print</h3>
+          <img class="navbar-logo ml-2" src="./assets/img/printr_logo.png" alt="PrintR">
+        </a>
+        
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon">&nbsp;</span></button>
+
+        <nav class="navbar  navbar-light ">
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+    
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#">Meet The Authors</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+    
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </nav>
+
+    <!-- showcase section -->
+    <!-- https://getbootstrap.com/docs/4.6/layout/grid/#equal-width -->
+    <section id="showcase" class="py-5">
+      <div class="primary-overlay text-white h-100">
+        <div class="container h-100">
+          <div class="row h-100">
+            <div class="col-lg-6 text-center">
+              <h1 class="font-weight-normal">Print what you dream of...</h1>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, explicabo. Excepturi dolore soluta perferendis in? Recusandae, qui repellat nihil molestiae a omnis alias sint, voluptatem blanditiis eum quibusdam porro doloribus?
+            </div>
+            <div class="col-lg-6 d-flex align-items-center justify-content-center">
+              <img src="./assets/img/poser-design.jpg" alt="" class="w-50">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- newsletter -->
+    <!-- https://getbootstrap.com/docs/4.6/components/forms/ -->
+    <section id="newsletter" class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              placeholder="Enter Name"
+            />
+          </div>
+          <div class="col-md-4">
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              placeholder="Enter Email"
+            />
+          </div>
+          <div class="col-md-4">
+            <!-- button.btn.btn-primarty.btn-lg.btn-bl>i.fa.fa-envelope-open-o -->
+            <button class="btn btn-primarty btn-lg btn-block">
+              <i class="fa fa-envelope-open-o"></i> Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- boxes -->
+    <!-- https://getbootstrap.com/docs/4.0/components/card/  -->
+    <section id="boxes" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">1</div>
+          <div class="col-md-3">2</div>
+          <div class="col-md-3">3</div>
+          <div class="col-md-3">4</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- https://getbootstrap.com/docs/4.6/components/collapse/#accordion-example -->
+    <section id="about" class="my-5 py-5 text-center bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="info-header mb-5">
+              <h1 class="text-primary pb-3">Why Print at all?</h1>
+              <p class="lead pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima doloribus eos assumenda, perferendis placeat explicabo ratione molestias sit, ipsa nulla eum nostrum itaque hic cupiditate in quibusdam a sed? Ipsam.</p>
+            </div>
+            <div>
+
+              <!-- Accordion -->
+              <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-center text-primary bg-light" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <i class="fa-solid fa-circle-down"></i> Get insired
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis inventore minus saepe ab explicabo numquam veniam ut atque vitae cumque esse provident, itaque voluptas totam et quam aliquam, ducimus sapiente?
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-center text-primary bg-light" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        <i class="fa-solid fa-circle-down"></i> Print what you think
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum soluta, fugit esse debitis illo excepturi sequi, veniam nostrum rerum eos tenetur, deleniti quas quia atque nulla. Corporis assumenda nesciunt incidunt?
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-center text-primary bg-light" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                        <i class="fa-solid fa-circle-down"></i> Open your mind!
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur fugiat cumque facilis dolore saepe vel, blanditiis sapiente laboriosam est adipisci! Tempora molestias recusandae tenetur sed quis doloribus, ea ullam corporis?
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="authors" class="my-5 text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="info-header mb-5">
+              <h1 class="text-primary pb-3">Meet the Printers</h1>
+              <p class="lead pb3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quaerat in itaque alias! Harum, mollitia saepe non ad rem corporis fuga voluptatibus! Quis quisquam quos quibusdam odio rerum consequatur omnis.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">printers go here</div>
+      </div>
+    </section>
+
+
+    <!-- contact -->
+    <!-- https://getbootstrap.com/docs/4.6/components/forms/#auto-sizing -->
+    <section id="contact" class="bg-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9"></div>
+          <div class="col-lg-3"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="main-footer" class="py-5 bg-primary text-white">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-6 m-auto">
+            <p class="lead">Copyright &copy; 2021</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
