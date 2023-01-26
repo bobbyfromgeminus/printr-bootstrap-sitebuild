@@ -1,72 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PrintR Bootstrap SiteBuild</title>
-    <link 
-      rel="stylesheet" 
-      href="./assets/fontawesome-free-6.2.1-web/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.2.1-web/css/all.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+      <link rel="stylesheet" href="./assets/css/style.css">
   </head>
+
+
   <body id="#home">
     
-    <!-- Nav section -->
-    <nav class="navbar navbar-expand-md navbar-light fixed top py-4">
-      <div class="container">
 
+    <!-- NAV SECTION -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white d-flex align-items-center justify-content-around">
         <a href="" class="d-flex align-items-center text-secondary text-decoration-none">
           <h3>Print</h3>
           <img class="navbar-logo ml-2" src="./assets/img/printr_logo.png" alt="PrintR">
         </a>
-        
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon">&nbsp;</span></button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Meet The Authors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
-        <nav class="navbar  navbar-light ">
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-    
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-    
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link" href="#">Meet The Authors</a>
-              </li>
-    
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-    
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </nav>
 
-    <!-- showcase section -->
-    <!-- https://getbootstrap.com/docs/4.6/layout/grid/#equal-width -->
+    <!-- SHOWCASE SECTION -->
     <section id="showcase" class="py-5">
       <div class="primary-overlay text-white h-100">
         <div class="container h-100">
-          <div class="row h-100">
-            <div class="col-lg-6 text-center">
-              <h1 class="font-weight-normal">Print what you dream of...</h1>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, explicabo. Excepturi dolore soluta perferendis in? Recusandae, qui repellat nihil molestiae a omnis alias sint, voluptatem blanditiis eum quibusdam porro doloribus?
+          <div class="row h-100 d-flex align-items-center justify-content-center">
+            <div class="col-md-6 d-flex flex-wrap text-center align-items-center justify-content-center">
+              <h1 class="font-weight-normal mb-3">Print what you dream of...</h1>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, explicabo. Excepturi dolore soluta perferendis in? Recusandae, qui repellat nihil molestiae a omnis alias sint.
+              <button class="btn btn-primary border-primary d-block mt-3"><i class="fa-solid fa-arrow-right"></i> Read More</button>
             </div>
-            <div class="col-lg-6 d-flex align-items-center justify-content-center">
-              <img src="./assets/img/poser-design.jpg" alt="" class="w-50">
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+              <img src="./assets/img/poser-design.jpg" alt="" class="w-50 d-none d-md-block">
             </div>
           </div>
         </div>
@@ -74,27 +66,25 @@
     </section>
 
 
-
-    <!-- newsletter -->
-    <!-- https://getbootstrap.com/docs/4.6/components/forms/ -->
+    <!-- NEWSLETTER SECTION -->
     <section id="newsletter" class="bg-dark text-white py-5">
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-12 col-md-4">
             <input
               type="text"
               class="form-control form-control-lg"
               placeholder="Enter Name"
             />
           </div>
-          <div class="col-md-4">
+          <div class="col-12 col-md-4">
             <input
               type="text"
               class="form-control form-control-lg"
               placeholder="Enter Email"
             />
           </div>
-          <div class="col-md-4">
+          <div class="col-12 col-md-4">
             <!-- button.btn.btn-primarty.btn-lg.btn-bl>i.fa.fa-envelope-open-o -->
             <button class="btn btn-primarty btn-lg btn-block">
               <i class="fa fa-envelope-open-o"></i> Subscribe
@@ -104,20 +94,56 @@
       </div>
     </section>
 
-    <!-- boxes -->
-    <!-- https://getbootstrap.com/docs/4.0/components/card/  -->
-    <section id="boxes" class="py-5">
+
+    <!-- BOXES SECTION -->
+    <section id="boxes" class="py-0 py-md-5">
       <div class="container">
         <div class="row">
-          <div class="col-md-3">1</div>
-          <div class="col-md-3">2</div>
-          <div class="col-md-3">3</div>
-          <div class="col-md-3">4</div>
+          <div class="col-12 col-md-3">
+            <!-- card -->
+            <div class="card border border-primary">
+              <div class="card-body">
+                <h5 class="card-title text-center">Print better</h5>
+                <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <!-- /card -->
+          </div>
+          <div class="col-12 col-md-3">
+            <!-- card -->
+            <div class="card border bg-primary">
+              <div class="card-body">
+                <h5 class="card-title text-center text-white">Print smarter</h5>
+                <p class="card-text text-center text-white">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <!-- /card -->
+          </div>
+          <div class="col-12 col-md-3">
+            <!-- card -->
+            <div class="card border border-primary">
+              <div class="card-body">
+                <h5 class="card-title text-center">Print faster</h5>
+                <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <!-- /card -->
+          </div>
+          <div class="col-12 col-md-3">
+            <!-- card -->
+            <div class="card border bg-primary">
+              <div class="card-body">
+                <h5 class="card-title text-center text-white">Print better</h5>
+                <p class="card-text text-center text-white">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <!-- /card -->
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- https://getbootstrap.com/docs/4.6/components/collapse/#accordion-example -->
+    <!-- ACCORDION SECTION -->
     <section id="about" class="my-5 py-5 text-center bg-light">
       <div class="container">
         <div class="row">
@@ -127,7 +153,6 @@
               <p class="lead pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima doloribus eos assumenda, perferendis placeat explicabo ratione molestias sit, ipsa nulla eum nostrum itaque hic cupiditate in quibusdam a sed? Ipsam.</p>
             </div>
             <div>
-
               <!-- Accordion -->
               <div class="accordion" id="accordionExample">
                 <div class="card">
@@ -173,13 +198,14 @@
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
       </div>
     </section>
 
+
+    <!-- PRINTERS SECTION -->
     <section id="authors" class="my-5 text-center">
       <div class="container">
         <div class="row">
@@ -190,23 +216,141 @@
             </div>
           </div>
         </div>
-        <div class="row">printers go here</div>
-      </div>
-    </section>
 
-
-    <!-- contact -->
-    <!-- https://getbootstrap.com/docs/4.6/components/forms/#auto-sizing -->
-    <section id="contact" class="bg-light py-5">
-      <div class="container">
+        <!-- PRINTER CARDS -->
         <div class="row">
-          <div class="col-lg-9"></div>
-          <div class="col-lg-3"></div>
+
+          <!-- Printer Profile Card #01-->
+          <div class="col-12 col-md-3 px-2">
+            <div class="card d-flex align-items-center">
+              <img src="./assets/img/profile1.jpeg" class="card-img-top rounded-circle w-50 mt-0" style="margin-top: -2rem !important;" alt="Susan Williams">
+              <div class="card-body">
+                <h5 class="card-title text-dark">Susan Williams</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Lead printer</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="px-5 px-md-2 d-flex justify-content-around text-primary">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Printer Profile Card #02-->
+          <div class="col-12 col-md-3 px-2">
+            <div class="card d-flex align-items-center">
+              <img src="./assets/img/profile2.jpeg" class="card-img-top rounded-circle w-50 mt-0" style="margin-top: -2rem !important;" alt="Susan Williams">
+              <div class="card-body">
+                <h5 class="card-title text-dark">Susan Williams</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Lead printer</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="px-5 px-md-2 d-flex justify-content-around text-primary">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Printer Profile Card #03-->
+          <div class="col-12 col-md-3 px-2">
+            <div class="card d-flex align-items-center">
+              <img src="./assets/img/profile3.jpeg" class="card-img-top rounded-circle w-50 mt-0" style="margin-top: -2rem !important;" alt="Kevin Swanson">
+              <div class="card-body">
+                <h5 class="card-title text-dark">Kevin Swanson</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Lead printer</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="px-5 px-md-2 d-flex justify-content-around text-primary">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Printer Profile Card #04-->
+          <div class="col-12 col-md-3 px-2">
+            <div class="card d-flex align-items-center">
+              <img src="./assets/img/profile4.jpeg" class="card-img-top rounded-circle w-50 mt-0" style="margin-top: -2rem !important;" alt="Susan Williams">
+              <div class="card-body">
+                <h5 class="card-title text-dark">Susan Williams</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Lead printer</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="px-5 px-md-2 d-flex justify-content-around text-primary">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <!-- footer -->
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="bg-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="container mb-3">
+            <h3>Get in touch</h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic at vitae dicta reiciendis et perspiciatis cum ad, saepe distinctio delectus fuga quas, possimus magnam maxime, quisquam impedit minima quia sed.
+          </div>
+          <div class="col-md-9">
+            <form>
+              <div class="form-row align-items-center">
+                <div class="col-12 mb-3">
+                  <label class="sr-only" for="inlineFormInputGroup">Name</label>
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="fa-solid fa-user"></i>
+                      </div>
+                    </div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Name">
+                  </div>
+                </div>
+                <div class="col-12 mb-3">
+                  <label class="sr-only" for="inlineFormInputGroup2">Email</label>
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="fa-solid fa-envelope"></i>
+                      </div>
+                    </div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup2" placeholder="Email">
+                  </div>
+                </div>
+                <div class="col-12 mb-3">
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="fa-solid fa-pen"></i>
+                      </div>
+                    </div>
+                    <textarea class="form-control" rows="6"></textarea>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-light mb-2 col-12" style="background-color: #e9ecef;">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-3 d-none d-md-flex align-items-center justify-content-center">
+            <img class="w-50" src="./assets/img/printr_logo.png" alt="PrintR">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FOOTER SECTION -->
     <footer id="main-footer" class="py-5 bg-primary text-white">
       <div class="container">
         <div class="row text-center">
@@ -217,15 +361,10 @@
       </div>
     </footer>
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"
-    ></script>
+
+    <!-- JQUERY & BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
   </body>
 </html>

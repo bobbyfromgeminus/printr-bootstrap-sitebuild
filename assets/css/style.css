@@ -17,7 +17,7 @@
 #showcase {
   position: relative;
   background: url(../img/mountain.jpeg);
-  min-height: 600px;
+  min-height: 550px;
 }
 
 #showcase h1 {
@@ -40,7 +40,7 @@
   border-radius: 0;
 }
 
-.btn {
+#newsletter .btn, #showcase .btn {
   color: white;
   background-color: #3292a6;
 }
